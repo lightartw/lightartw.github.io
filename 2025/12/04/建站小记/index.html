@@ -167,10 +167,32 @@
         </span>
         
         
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%95%99%E7%A8%8B/" style="color: #03a9f4">
+                    教程
+                </a>
+            </span>
+            
+        </span>
+        
     </div>
     
     <div class="content" v-pre>
-        
+        <p>我的网站部署采用了hexo + github pages的形式。</p>
+<h2 id="1-部署hexo"><a href="#1-部署hexo" class="headerlink" title="1.部署hexo"></a>1.部署hexo</h2><p>安装教程参考了这个<a target="_blank" rel="noopener" href="https://yuanyueyao.github.io/2025/03/12/hexo-github-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/">博客</a>，也可以通过<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a>部署。<br>我的环境是 Windows，所以写了 <code>.bat</code> 自动化部署脚本</p>
+<pre><code class="highlight PowerShell">@<span class="built_in">echo</span> off
+hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy
+<span class="built_in">echo</span> 网站已更新
+pause</code></pre>
+<h2 id="2-定制主题"><a href="#2-定制主题" class="headerlink" title="2.定制主题"></a>2.定制主题</h2><p>可以去 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主题</a>中选择自己喜欢的主题，将主题下载到 <code>theme</code> 文件夹下，再根据主题的文档进行自己的配置。</p>
+
     </div>
     
     

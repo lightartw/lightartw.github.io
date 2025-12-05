@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>About | Lightart&#39;s Blog</title>
+    <title>建站小记 | Lightart&#39;s Blog</title>
     <meta name="author" content="lightart" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -156,21 +156,55 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>About</h1>
+        <h1>建站小记</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2025/12/5
+            2025/12/4
         </span>
         
+        <span class="category">
+            <a href="/categories/%E6%95%99%E7%A8%8B/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                教程
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/Hexo/" style="color: #00a596">
+                    Hexo
+                </a>
+            </span>
+            
+        </span>
         
     </div>
     
     <div class="content" v-pre>
-        
+        <p>简单记录一下建站参考的一些文章</p>
+<span id="more"></span>
+<p>我的网站部署采用了hexo + github pages的形式。</p>
+<h2 id="1-部署hexo"><a href="#1-部署hexo" class="headerlink" title="1.部署hexo"></a>1.部署hexo</h2><p>安装教程参考了这个<a target="_blank" rel="noopener" href="https://yuanyueyao.github.io/2025/03/12/hexo-github-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/">博客</a>，也可以通过<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a>部署。<br>我的环境是 Windows，所以写了 <code>.bat</code> 自动化部署脚本</p>
+<pre><code class="language-PowerShell">@echo off
+hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy
+echo 网站已更新
+pause
+</code></pre>
+<h2 id="2-定制主题"><a href="#2-定制主题" class="headerlink" title="2.定制主题"></a>2.定制主题</h2><p>可以去 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">Hexo主题</a>中选择自己喜欢的主题，将主题下载到 <code>theme</code> 文件夹下，再根据主题的文档进行自己的配置。我使用的是<a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">particlex</a></p>
+
     </div>
     
     

@@ -15,6 +15,7 @@ mixins.highlight = {
             for (let i of codes) {
                 let code = i.textContent;
                 let language = [...i.classList, ...i.firstChild.classList][0] || "plaintext";
+                language = language.replace(/^language-/, ''); // 清理 language- 我的markdown解析出来的代码块会有language-前缀 
                 let highlighted;
                 try {
                     highlighted = hljs.highlight(code, { language }).value;
